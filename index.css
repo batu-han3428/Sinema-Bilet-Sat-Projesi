@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* body */
+body{
+    background: linear-gradient(90deg,rgb(31, 31, 35),rgb(26, 29, 32));
+}
+
+
+/* sinema ekranı */
+.sinemaEkran{
+    background: rgb(255, 255, 255); 
+    width:50%; 
+    height: 50%; 
+    margin:7% auto; 
+    box-shadow: 0 5px 10px 5px rgb(120, 118, 120);
+}
+
+
+/* Koltuklar */
+.koltuklarAnaDiv{
+    margin:0 auto; 
+    width:50%; 
+    display: flex; 
+    justify-content: space-around;
+}
+
+.koltuklar{
+    height: auto !important;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    row-gap: 10px; 
+}
+
+.koltuklar:first-child, .koltuklar:last-child{
+    width:70px; 
+}
+
+.koltuklar:nth-child(2){
+    width:145px; 
+}
+
+.koltuklar > div{
+    padding-bottom: 3px !important;
+    width:30px; 
+    height:30px; 
+    background: rgb(69, 69, 84); 
+    border-radius: 20%;
+}
+
+
+/* koltuk bilgisi */
+.koltukBilgi{
+    background-color: rgb(19, 17, 17); 
+    border-radius: 10px; 
+    display: flex; 
+    width: 40%; 
+    margin: 5% auto; 
+    justify-content: space-around; 
+    padding:5px;
+}
+
+.koltukBilgi > div{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.koltukBilgi > div:first-child, .koltukBilgi > div:last-child{
+    width:72px;
+}
+
+.koltukBilgi > div:nth-child(2){
+    width:62px;
+}
+
+
+.koltukBilgi > div:first-child > div:first-child > div,
+.koltukBilgi > div:nth-child(2) > div:first-child > div,
+.koltukBilgi > div:last-child > div:first-child > div{
+    width:30px; 
+    height:30px; 
+    border-radius: 20%;
+}
+
+.koltukBilgi > div:first-child > div:last-child > span,
+.koltukBilgi > div:nth-child(2) > div:last-child > span,
+.koltukBilgi > div:last-child > div:last-child > span{
+    color: white;
+}
+
+.koltukBilgi > div:first-child > div:first-child > div{
+    background: rgb(249, 228, 108); 
+}
+
+.koltukBilgi > div:nth-child(2) > div:first-child > div{
+    background:rgb(69, 69, 84); 
+}
+
+.koltukBilgi > div:last-child > div:first-child > div{
+    background: white;
+}
+
+
+/* film ve fiyat gösterim alanı */
+.filmVeFiyat{
+    background: rgb(69, 69, 84); 
+    position:absolute; 
+    left:80%; 
+    top:20%; 
+    width:220px;
+    border-radius: 15px; 
+    padding:10px;
+}
+
+.filmVeFiyatBaslik{
+    font-family:serif; 
+    text-align: center; 
+    color:white;
+}
+
+.filmVeFiyatAciklama{
+    text-align: center; 
+    display: inline-block; 
+    margin-top: 10px; 
+    margin-right: 5px; 
+    color: whitesmoke; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 15px;
+}
